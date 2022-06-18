@@ -1,0 +1,19 @@
+npm install -g @angular/cli --- Para instalar ---
+
+ng new nombreapp --- para crear nuevo proyecto ---
+
+ng serve --o --- Para iniciar entorno de desarrollo ---
+
+ng generate class post --type=model --skip-tests --- Para generar un modelo donde se especificará los datos de la Base de datos ---
+
+ng generate service post --skip-tests --- Para generar un servicio que se encargue de las acciones con la base de datos ---
+
+ng generate component xyz --- Generar nuevo componente ---
+
+ng build --- Compilar para producción ---
+
+npm i bootstrap firebase @angular/fire --- Para permitir la conexión entre Angular y Firebase e instalar Bootstrap ---
+
+-------------------------
+
+En archivo angular.json buscar "styles" y añadir "node_modules/bootstrap/dist/css/bootstrap.min.css" para los estilos
