@@ -8,7 +8,7 @@ ng generate class post --type=model --skip-tests --- Para generar un modelo dond
 
 ng generate service post --skip-tests --- Para generar un servicio que se encargue de las acciones con la base de datos ---
 
-ng generate component xyz --- Generar nuevo componente ---
+ng generate component components/show --skipTests=true --- Para crear un Componente (skipTests no funcion en versión reciente de Angular)---
 
 ng build --- Compilar para producción ---
 

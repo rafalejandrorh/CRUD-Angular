@@ -1,0 +1,28 @@
+<h2>Tabla de Títulos</h2>
+
+<div class="d-grip gap-2 mt-4">
+    <a routerLink="/create" class="btn btn-primary" type="button">Añadir</a>
+</div>
+
+<table class="table table-hover table-striped">
+    <thead class="bg dark text-white">
+        <th>Título</th>
+        <th>Contenido</th>
+        <th>Autor</th>
+        <th>Action</th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let post of Posts">
+            <td>{{ post.Titulo }}</td>
+            <td>{{ post.contenido }}</td>
+            <td>{{ post.autor }}</td>
+            <td>
+                <button routerLink="/edit/{{post.id}}" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                <button (click)="deleteRow(post)" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i></button>
+            </td>
+        </tr>
+
+    </tbody>
+
+</table>
